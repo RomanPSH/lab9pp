@@ -19,6 +19,7 @@
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app %>
+    <%= Sentry.get_trace_propagation_meta.html_safe %>
   </head>
 
   <body>
